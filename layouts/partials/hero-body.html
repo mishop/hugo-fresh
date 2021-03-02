@@ -3,12 +3,15 @@
 {{- $subtitle   := index $hero "subtitle" }}
 {{- $buttonText := index $hero "buttontext" }}
 {{- $buttonLink := index $hero "buttonlink" }}
+{{- $button1Text := index $hero "button1text" }}
+{{- $button1Link := index $hero "button1link" }}
 {{- $image      := index $hero "image" }}
+{{- $description      := index $hero "description" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
       <div class="column is-5 is-offset-1 landing-caption">
-        <h1 class="title is-2 is-bold is-spaced">
+        <h1 class="title is-3 is-bold is-spaced">
           {{ $title }}
         </h1>
         {{ with $subtitle }}
@@ -17,14 +20,20 @@
         </h2>
         {{ end }}
         <p>
-          <a class="button cta rounded primary-btn raised" href="{{ $buttonLink }}">
+          <a class="button cta rounded secondary-btn raised" href="{{ $buttonLink }}">
             {{ $buttonText }}
+          </a>
+            <a class="button cta rounded primary-btn raised is-hidden-desktop" href="tel:+381-65-3333-093">
+            {{ $button1Text }}
+          </a>
+          <a class="button cta rounded primary-btn raised is-hidden-touch" href="#contact">
+            {{ $button1Text }}
           </a>
         </p>
       </div>
       <div class="column is-5 is-offset-1">
         <figure class="image is-4by3">
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="Description">
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $description }}">
         </figure>
       </div>
     </div>
