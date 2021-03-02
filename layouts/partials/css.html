@@ -5,8 +5,16 @@
 {{- $fontFace     := replace .Site.Params.font.name " " "+" }}
 {{- $fontSizes    := delimit .Site.Params.font.sizes "," }}
 {{- $fontUrl      := printf "https://fonts.googleapis.com/css?family=%s:%s" $fontFace $fontSizes }}
-<link rel="icon" type="image/png" href="{{ "images/favicon.png" | relURL }}" />
-<link href="{{ $fontUrl }}" rel="stylesheet">
+<link rel="icon" type="image/png" href="{{ "images/favicon.svg" | relURL }}" />
+<link rel="preconnect" href="//fonts.googleapis.com" crossorigin="">
+<link rel="preconnect" href="//www.googletagmanager.com" crossorigin="">
+<link rel="preconnect" href="//connect.facebook.net" crossorigin="">
+<link rel="preconnect" href="//cdnjs.cloudflare.com" crossorigin="">
+<link rel="preconnect" href="//www.gstatic.com" crossorigin="">
+<link rel="preload" href="{{ $fontUrl }}&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+<noscript>
+<link href="{{ $fontUrl }}&display=swap" rel="stylesheet" type="text/css" />
+</noscript>
 {{- if $inServerMode }}
 {{- $css := resources.Get $sass | toCSS $cssOpts }}
 <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}">
@@ -14,4 +22,14 @@
 {{- $css := resources.Get $sass | toCSS $cssOpts | minify | fingerprint }}
 <link rel="stylesheet" type="text/css" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
 {{- end }}
-<link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+    $notification = $delete.parentNode;
+
+    $delete.addEventListener('click', () => {
+      $notification.parentNode.removeChild($notification);
+    });
+  });
+});</script>
+<!-- <link rel="stylesheet" type="text/css" href="{{ "css/icons.css" | relURL }}"> -->
