@@ -1,8 +1,11 @@
-{{ template "_internal/google_analytics_async.html" . }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>{{ if .IsHome }}{{ .Site.Title }} - Great site subtittle max 65 char{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}
+                                    {{ else }}Home page description max 160char{{ end }}" />
 {{ if eq .Site.Params.openGraph true }}
+  <meta property="og:image" {{ with .Params.featured_image }} content="{{ . }}"{{ end }} />
 {{ template "_internal/opengraph.html" . }}
 {{ end }}
-<meta name="description" content="{{ if .Params.summary }}{{ .Params.summary }}{{ else if .Site.Params.Description }}{{ .Site.Params.Description }}{{ else }}Hardcoded description; the author should update :){{ end }}" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
+{{ template "_internal/google_analytics_async.html" . }}
