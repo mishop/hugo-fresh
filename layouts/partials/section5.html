@@ -1,8 +1,11 @@
+{{- $section3 := .Site.Params.section3 }}
+{{- $title    := index $section3 "title" }}
+{{- $subtitle := index $section3 "subtitle" }}
 <section class="section section-light-grey is-medium">
   <div class="container">
     <div class="title-wrapper has-text-centered">
-      <h2 class="title is-3 is-spaced">Drop us a line or two </h2>
-      <h3 class="subtitle is-5 is-muted">We'd love to hear from you</h3>
+      <h2 class="title is-3 is-spaced">{{ $title }}</h2>
+      <h3 class="subtitle is-5 is-muted">{{ $subtitle }}</h3>
       <div class="divider is-centered"></div>
     </div>
 
