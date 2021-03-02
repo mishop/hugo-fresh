@@ -126,7 +126,7 @@ params:
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/lucperkins/github-fresh
+    - link: https://github.com/mishop/hugo-seo-bulma/
       # Icons are from Font Awesome
       icon: github
     - link: https://dribbble.com/#
