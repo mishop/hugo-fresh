@@ -6,7 +6,7 @@
 {{- $button1Text := index $hero "button1text" }}
 {{- $button1Link := index $hero "button1link" }}
 {{- $image      := index $hero "image" }}
-{{- $description      := index $hero "description" }}
+{{- $alt      := index $hero "alt" }}
 <div class="hero-body">
   <div class="container">
     <div class="columns is-vcentered">
@@ -33,7 +33,7 @@
       </div>
       <div class="column is-5 is-offset-1">
         <figure class="image is-4by3">
-          <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $description }}">
+          <img src="{{ printf "/images/%s" $image | relURL }}" alt="{{ $alt }}">
         </figure>
       </div>
     </div>
