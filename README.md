@@ -1,6 +1,6 @@
 # The Fresh SEO optimized theme for Hugo with Bulma
 
-**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://github.com/cssninjaStudio/fresh). You can find a live demo of the original theme [here](https://www.manerrors.com) and a live demo of the Hugo theme [here](https://hugo-fresh.now.sh/).
+**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://github.com/cssninjaStudio/fresh). You can find a live demo theme [here](https://www.manerrors.com) and a live demo of the Hugo theme [here](https://www.alpro.ba/) and [Google page speed result 97/100](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.manerrors.com%2F)
 This update is SEO optimized. 
 
 In single post please add:
