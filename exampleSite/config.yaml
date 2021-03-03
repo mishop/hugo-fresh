@@ -21,6 +21,7 @@ params:
   # Logo (from static/images/logos/___)
     image: logos/fresh.svg
     link: /
+    alt: Img alt
   font:
     name: "Open Sans"
     sizes: [400,600]
