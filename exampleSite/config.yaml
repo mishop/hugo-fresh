@@ -36,6 +36,8 @@ params:
     buttonlink: "#"
     # Hero image (from static/images/___)
     image: illustrations/worker.svg
+    #Herlo image alt
+    alt: Imge lustration
     # Footer logos (from static/images/logos/clients/___.svg)
     clientlogos:
     - systek
@@ -99,6 +101,7 @@ params:
     title: One platform
     subtitle: To rule them all
     image: illustrations/mockups/app-mockup.png
+    alt: Platfrom image
     buttonText: Get started
     buttonLink: "#"
   section4:
@@ -123,6 +126,7 @@ params:
   footer:
     # Logo (from /images/logos/___)
     logo: fresh-white-alt.svg
+    alt: Image alt
     # Social Media Title
     socialmediatitle: Follow Us
     # Social media links (GitHub, Twitter, etc.). All are optional.
