@@ -4,7 +4,7 @@
 This update is SEO optimized. 
 In single post please add:
 
-``
+``bash
 description = "SEO description max 160 char"
 featured_image: "url of image for social media"
 sidebar =  true 
