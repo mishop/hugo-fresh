@@ -78,6 +78,7 @@ The "main" page which you see when you open the website.
 
 <details>
 <summary>Code</summary>
+ 
 ```
 hero:
   title: Manage. Deploy.
