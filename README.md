@@ -1,6 +1,17 @@
 # The Fresh SEO optimized theme for Hugo with Bulma
 
-**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://cssninja.io/themes/fresh). You can find a live demo of the original theme [here](https://cssninjastudio.github.io) and a live demo of the Hugo theme [here](https://hugo-fresh.now.sh/).
+**Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://github.com/cssninjaStudio/fresh). You can find a live demo of the original theme [here](https://www.manerrors.com) and a live demo of the Hugo theme [here](https://hugo-fresh.now.sh/).
+This update is SEO optimized. 
+In single post please add:
+
+``
+title = 'Plastifikacija aluminijumskih profila'
+description = "SEO description max 160 char"
+featured_image: "url of image for social media"
+sidebar =  true 
+include_footer = true``
+
+Please edit home page title: https://github.com/mishop/hugo-seo-bulma/blob/master/layouts/partials/meta.html#4
 
 ![Fresh theme logo](images/screenshot.png)
 
