@@ -2,6 +2,7 @@
 
 **Fresh** is a theme for the [Hugo](https://gohugo.io) static site generator adapted from the gorgeous, [Bulma](https://bulma.io)-based theme of the same name from [CSS Ninja](https://github.com/cssninjaStudio/fresh). You can find a live demo of the original theme [here](https://www.manerrors.com) and a live demo of the Hugo theme [here](https://hugo-fresh.now.sh/).
 This update is SEO optimized. 
+
 In single post please add:
 
 ```bash
