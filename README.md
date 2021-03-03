@@ -8,7 +8,8 @@ In single post please add:
 description = "SEO description max 160 char"
 featured_image: "url of image for social media"
 sidebar =  true 
-include_footer = true```
+include_footer = true
+```
 
 Please edit home page title: https://github.com/mishop/hugo-seo-bulma/blob/master/layouts/partials/meta.html#4
 
