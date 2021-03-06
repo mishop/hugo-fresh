@@ -2,7 +2,7 @@
 {{- $title    := index $section2 "title" }}
 {{- $subtitle := index $section2 "subtitle" }}
 {{- $features := index $section2 "features" }}
-<section class="section is-medium">
+<section id="detail" class="section is-medium">
   <div class="container">
     <div class="columns">
       <div class="column is-centered-tablet-portrait">
@@ -15,7 +15,7 @@
         <article class="media icon-box">
           <figure class="media-left">
             <p class="image">
-              <img src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}" alt="{{ .title }}">
+              <img class="svg-image" src="{{ printf "/images/illustrations/icons/%s.svg" .icon | relURL }}" alt="{{ .title }}" width="150" height="150">
             </p>
           </figure>
           <div class="media-content mt-50">
