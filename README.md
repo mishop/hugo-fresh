@@ -319,6 +319,32 @@ include_footer: true
 
 </details>
 
+### Blog
+To add blog post 
+```
+hugo new blog/blog-post.md             
+
+```
+
+You can create single post in the `content/blog/` directory.
+
+"featured_image: img.jpg" add featured image link.
+
+<details>
+<summary>Code</summary>
+
+```
+---
+title: 1st post
+featured_image: img.jpg
+sidebar: true # or false to display the sidebar
+sidebarlogo: fresh-white-alt # From (static/images/logo/)
+include_footer: true
+---
+```
+
+</details>
+
 ## Troubleshooting
 
 If you see `error: failed to transform resource: TOCSS: failed to transform "style.sass"` when attempting to run your `hugo server`, make sure you have the extended version of Hugo installed!
