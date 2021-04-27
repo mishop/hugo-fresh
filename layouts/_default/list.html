@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{ partial "navbar.html" . }}
+  {{ partial "navbar-clone.html" . }}
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-centered-tablet-portrait">
+      
+
+        <h1 class="title section-title">{{ .Title }}</h1>
+        <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+        <div class="divider"></div>
+      </div>
+    </div>
+{{ range .Pages.ByPublishDate.Reverse }}
+<p>
+    {{ partial "metadata.html" . }}
+    <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+
+</p>
+{{ end }}
+  </div>
+</section>
+    {{ partial "footer.html" . }}
+{{ end }}
